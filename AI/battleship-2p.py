@@ -155,10 +155,10 @@ def place_bb(pos):
 def place_ca(pos):
     if randrange(2) > 0:
         res = ((6,0),(8,0))
-        invalid = [(0,x) for x in range(6,9)]
+        invalid = [(x,0) for x in range(6,9)]
     else:
         res = ((1,9),(3,9))
-        invalid = [(9,x) for x in range(1,4)]
+        invalid = [(x,9) for x in range(1,4)]
     
     return res,invalid
         
